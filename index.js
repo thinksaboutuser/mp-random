@@ -11,10 +11,10 @@ expressApp.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
 
-
+const API_TOKEN = '1534072513:AAEHyl-D1TGMHgbhxzeUUYjyiIC_rZKS_WE';
 
 // Создать бота с полученным ключом
-const bot = new Telegraf("1735318646:AAG-7bhOBccntiBfgscpPhf_Hxh0WSWD_ic");
+const bot = new Telegraf(API_TOKEN);
 
 // Обработчик начала диалога с ботом
 bot.start((ctx) =>
