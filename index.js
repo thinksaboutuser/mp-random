@@ -13,7 +13,7 @@ expressApp.listen(port, () => {
 
 const API_TOKEN = process.env.API_TOKEN || '';
 
-console('API_TOKEN', API_TOKEN);
+console.log('API_TOKEN' + API_TOKEN);
 
 
 
