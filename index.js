@@ -13,6 +13,10 @@ expressApp.listen(port, () => {
 
 const API_TOKEN = process.env.API_TOKEN || '';
 
+console('API_TOKEN', API_TOKEN);
+
+
+
 // Создать бота с полученным ключом
 const bot = new Telegraf(API_TOKEN);
 
@@ -51,6 +55,8 @@ bot.command("test", (ctx) => {
 
 
 bot.command("random", (ctx) => {
+	console.log(ctx)
+	console.log('----')
   return ctx.reply("https://t.me/memasikpidorasik/" + getRandomInt(8000) );
 });
 
