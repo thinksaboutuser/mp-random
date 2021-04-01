@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "telegraf": "^4.3.0"
+  },
+  "engines": {
+    "node": "14.15.0"
   }
 }

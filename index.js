@@ -31,6 +31,12 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
+
+bot.command("test", (ctx) => {
+  return ctx.reply("I am tesing here");
+});
+
+
 bot.command("random", (ctx) => {
   return ctx.reply("https://t.me/memasikpidorasik/" + getRandomInt(8000) );
 });
