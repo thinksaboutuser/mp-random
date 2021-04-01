@@ -1,7 +1,20 @@
-const { Telegraf } = require("telegraf");
+const { Composer } = require('micro-bot')
+const express = require('express')
+const expressApp = express()
+
+
+const port = process.env.PORT || 3000
+expressApp.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+expressApp.listen(port, () => {
+  console.log(`Listening on port ${port}`)
+})
+
+
 
 // Создать бота с полученным ключом
-const bot = new Telegraf("1735318646:AAG-7bhOBccntiBfgscpPhf_Hxh0WSWD_ic");
+const bot = new Composer("1735318646:AAG-7bhOBccntiBfgscpPhf_Hxh0WSWD_ic");
 
 // Обработчик начала диалога с ботом
 bot.start((ctx) =>
@@ -49,4 +62,5 @@ bot.command("random", (ctx) => {
 // });
 
 // Запуск бота
-bot.launch();
+//bot.launch();
+module.exports = bot
