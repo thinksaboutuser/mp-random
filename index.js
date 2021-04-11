@@ -83,20 +83,23 @@ bot.command("test", (ctx) => {
 
 bot.command("random", (ctx) => {
 
+  if(ctx.from != undefined){
+    if(ctx.from.username != undefined){
 
-
-  database.ref("users/"+ctx.from.username).set({
-    username: ctx.from.username,
-    first_name: ctx.from.first_name
-  }, function(error) {
-    if (error) {
-      // The write failed...
-      console.log("Failed with error: " + error)
-    } else {
-      // The write was successful...
-      console.log("success")
+        database.ref("users/"+ctx.from.username).set({
+          username: ctx.from.username,
+          first_name: ctx.from.first_name
+        }, function(error) {
+          if (error) {
+            // The write failed...
+            console.log("Failed with error: " + error)
+          } else {
+            // The write was successful...
+            console.log("success")
+          }
+        })
     }
-  })
+  }
 
 
   return ctx.reply("https://t.me/memasikpidorasik/" + getRandomInt(8000) );
