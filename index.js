@@ -167,17 +167,17 @@ bot.on('sticker', (ctx) => ctx.reply('👍'))
 
 
 
-bot.on('text', (ctx) => {
+// bot.on('text', (ctx) => {
 
-  // console.log(ctx)
+//   // console.log(ctx)
 
 
-  // Explicit usage
-  ctx.telegram.sendMessage(ctx.message.chat.id, `Hello ${ctx.state.role}`, keyboard)
+//   // Explicit usage
+//   ctx.telegram.sendMessage(ctx.message.chat.id, `Hello ${ctx.state.role}`, keyboard)
 
-  // Using context shortcut
-  ctx.reply(`Hello ${ctx.state.role}`)
-})
+//   // Using context shortcut
+//   ctx.reply(`Hello ${ctx.state.role}`)
+// })
 
 
 
