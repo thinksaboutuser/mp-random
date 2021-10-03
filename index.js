@@ -110,7 +110,7 @@ bot.command("random", (ctx) => {
 
   //return ctx.reply( "https://t.me/memasikpidorasik/" + getRandomInt(10000) );
   return ctx.replyWithHTML(
-    "https://t.me/memasikpidorasik/" + getRandomInt(10000),
+    "https://t.me/memasikpidorasik/" + getRandomInt(11000),
     Markup.keyboard(['/random']).resize()
   )
 });
