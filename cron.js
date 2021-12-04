@@ -1,6 +1,6 @@
 const https = require('https');
 
-https.get('http://mp-random.herokuapp.com/', (resp) => {
+https.get('https://mp-random.herokuapp.com/', (resp) => {
   let data = '';
 
   // A chunk of data has been received.
