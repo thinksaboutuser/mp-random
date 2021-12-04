@@ -8,29 +8,6 @@ if ( process.env.NODE_ENV == 'dev' ) {
   require('dotenv').config();
 }
 
-// var firebase = require('firebase')
-
-// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//   apiKey: process.env.API_KEY || '',
-//   authDomain: "mp-random.firebaseapp.com",
-//   projectId: "mp-random",
-//   storageBucket: "mp-random.appspot.com",
-//   messagingSenderId: "748550940684",
-//   appId: "1:748550940684:web:f32c6caa536e47cb5fa629",
-//   measurementId: "G-CL9B439HMT",
-//   databaseURL: "https://mp-random-default-rtdb.europe-west1.firebasedatabase.app/",
-//   storageBucket: "bucket.appspot.com"
-// };
-
-
-
-// firebase.initializeApp(firebaseConfig)
-
-// let database = firebase.database()
-
-
-
 
 const port = process.env.PORT || 3001
 expressApp.get('/', (req, res) => {
